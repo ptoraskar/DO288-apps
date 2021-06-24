@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
     options {
         // set a timeout of 30 minutes for this pipeline
         timeout(time: 30, unit: 'MINUTES')
@@ -26,7 +26,7 @@ pipeline {
 
         // TODO: ADD A STAGE THAT SAYS HELLO
         stage('stage 2') {
-           step {
+           steps {
              sh 'echo hello from stage 2!'
            }
         }
